@@ -36,7 +36,6 @@ export const useAPI = () => {
     }
   };
   // Delete User Information
-
   const deleteUserInfo = (id) => {
     try {
       axios.delete(`${baseURL}api/delete-user/${id}`).then((res) => {
