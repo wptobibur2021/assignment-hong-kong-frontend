@@ -5,7 +5,7 @@ export const useAPI = () => {
   const navigate = useNavigate();
   const { successNotify, errorNotify } = useNotification();
   // Below Base URL
-  const baseURL = "http://localhost:8000/";
+  const baseURL = "https://sector-backend-22.vercel.app/";
   // Get User Information
   const getUserInfo = (setUsers) => {
     try {
@@ -19,7 +19,7 @@ export const useAPI = () => {
   //   Get Category Information
   const getCategory = (setSelector) => {
     axios
-      .get("http://localhost:8000/api/category")
+      .get(`${baseURL}api/category`)
       .then((res) => setSelector(res.data.data));
   };
   // Add User Information
