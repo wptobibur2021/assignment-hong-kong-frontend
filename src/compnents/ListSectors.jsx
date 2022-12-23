@@ -11,16 +11,9 @@ function ListSectors() {
   const deleteHandle = (id) => {
     deleteUserInfo(id);
   };
-  const editHandle = (id) => {
-    console.log("ID: ", id);
-  };
   return (
     <div>
-      <Lists
-        users={users}
-        deleteHandle={deleteHandle}
-        editHandle={editHandle}
-      />
+      <Lists users={users} deleteHandle={deleteHandle} />
     </div>
   );
 }

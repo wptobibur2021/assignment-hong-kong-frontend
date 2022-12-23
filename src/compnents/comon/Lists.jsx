@@ -1,5 +1,5 @@
 import React from "react";
-const Lists = ({ users, deleteHandle, editHandle }) => {
+const Lists = ({ users, deleteHandle }) => {
   return (
     <div>
       {users.length > 0 ? (
@@ -35,13 +35,6 @@ const Lists = ({ users, deleteHandle, editHandle }) => {
                     {user.aggree === true && "Agree"}
                   </td>
                   <td className="py-4 px-6">
-                    <a
-                      onClick={(e) => editHandle(user._id)}
-                      href="#"
-                      className="font-medium mr-3 text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      Edit
-                    </a>
                     <a
                       onClick={(e) => deleteHandle(user._id)}
                       href="#"
