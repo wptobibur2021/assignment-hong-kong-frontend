@@ -48,6 +48,5 @@ export const useAPI = () => {
       errorNotify(err);
     }
   };
-
   return { addUserInfo, deleteUserInfo, getUserInfo, getCategory };
 };
